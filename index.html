@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hesap Makinesi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Koyu/Açık Mod Butonu -->
+  <button class="mode-toggle" id="mode-toggle">🌙</button>
+
+  <!-- Hesap Makinesi -->
+  <div class="calculator">
+    <div class="display-container">
+      <div id="expression" class="expression"></div>
+      <input type="text" id="result" readonly>
+    </div>
+    <div class="buttons">
+      <!-- Satır 1: Silme İşlevleri ve Operatörler -->
+      <button class="function">←</button>
+      <button class="function">C</button>
+      <button class="function">+/-</button>
+      <button class="operator">/</button>
+      <div class="empty"></div>
+
+      <!-- Satır 2 -->
+      <button class="number">9</button>
+      <button class="number">8</button>
+      <button class="number">7</button>
+      <button class="operator">*</button>
+      <div class="empty"></div>
+
+      <!-- Satır 3 -->
+      <button class="number">6</button>
+      <button class="number">5</button>
+      <button class="number">4</button>
+      <button class="operator">-</button>
+      <div class="empty"></div>
+
+      <!-- Satır 4 -->
+      <button class="number">3</button>
+      <button class="number">2</button>
+      <button class="number">1</button>
+      <button class="operator">+</button>
+      <div class="empty"></div>
+
+      <!-- Satır 5 -->
+      <button class="function">%</button>
+      <button class="number">0</button>
+      <button class="number">.</button>
+      <button class="equal">=</button>
+      <div class="empty"></div>
+    </div>
+  </div>
+
+  <!-- Klavye Kısayol Butonu -->
+  <button id="keyboard-guide-toggle" class="keyboard-guide-toggle">Klavye Rehberi ⌨️</button>
+
+  <!-- Klavye Kullanım Rehberi -->
+  <div id="keyboard-guide" class="keyboard-guide">
+    <h3>Klavye Kısayolları</h3>
+    <ul>
+      <li><b>0–9</b>: Sayılar</li>
+      <li><b>+</b>, <b>-</b>, <b>*</b>, <b>/</b>: Operatörler</li>
+      <li><b>. veya ,</b>: Ondalık</li>
+      <li><b>Enter</b>: Hesapla</li>
+      <li><b>Backspace</b>: Son karakteri sil</li>
+      <li><b>Alt + C</b>: Tam temizle</li>
+      <li><b>%</b>: Yüzde</li>
+      <li><b>Alt + N</b>: Sayıyı negatif/pozitif yap</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
